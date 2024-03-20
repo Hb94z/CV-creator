@@ -66,21 +66,25 @@ function App() {
 
   return (
     <>
-      <div className="header">Header</div>
+      <div className="header">
+        <div className="header-title">CV Creation Tool</div>
+      </div>
       <div className="main-container">
         <div className="input-and-CV-container">
-          <PersonalInfo
-            firstName={firstName}
-            lastName={lastName}
-            email={email}
-            phone={phone}
-            handleFirstNameChange={HandleFirstNameChange}
-            HandleSecondNameChange={HandleSecondNameChange}
-            HandleEmailChange={HandleEmailChange}
-            HandlePhoneChange={HandlePhoneChange}
-          ></PersonalInfo>
+          <div className="personal-details-input details-input">
+            <PersonalInfo
+              firstName={firstName}
+              lastName={lastName}
+              email={email}
+              phone={phone}
+              handleFirstNameChange={HandleFirstNameChange}
+              HandleSecondNameChange={HandleSecondNameChange}
+              HandleEmailChange={HandleEmailChange}
+              HandlePhoneChange={HandlePhoneChange}
+            ></PersonalInfo>
+          </div>
 
-          <div className="education-input">
+          <div className="education-input details-input">
             <Educationinfo
               educations={educations}
               setEducations={setEducations}
@@ -88,7 +92,7 @@ function App() {
               setEducationsID={setEducationsID}
             ></Educationinfo>
           </div>
-          <div className="experience-input">
+          <div className="experience-input details-input">
             <Experienceinfo
               workExperiences={workExperiences}
               setWorkExperiences={setWorkExperiences}

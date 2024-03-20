@@ -69,11 +69,7 @@ function PersonalInfo(prop) {
       </>
     );
   }
-  return (
-    <div>
-      <CollapsableMenu title="Personal Details" contents={Content()} />
-    </div>
-  );
+  return <CollapsableMenu title="Personal Details" contents={Content()} />;
 }
 
 export default PersonalInfo;

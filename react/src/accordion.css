@@ -5,12 +5,13 @@
   display: grid;
   grid-template-columns: 80% 20%;
   margin-bottom: 20px;
-  background-color: rgb(254, 249, 249);
   font-size: 40px;
   border: 1px solid black;
   box-shadow: 2px 2px 2px grey;
 }
 .accordion-content {
+  display: flex;
+  flex-direction: column;
 }
 .accordion-title-header {
   justify-self: start;
